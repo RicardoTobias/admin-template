@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Admin - Dashboard</title>
+        <title>Admin - Adicionar/Editar grupo</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -148,7 +148,69 @@
                 </div>
 
                 <div class="main">
-                    teste                 
+                    <div class="col-md-12 no-padding">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <h4><i class="fa fa-list" aria-hidden="true"></i> Formulário grupo - Adicionar/Editar</h4>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <ol class="breadcrumb">
+                                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Painel</a></li>
+                                            <li><a href="grupos.html"><i class="fa fa-group" aria-hidden="true"></i> Grupos</a></li>
+                                            <li class="active"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar / <i class="fa fa-pencil" aria-hidden="true"></i> Editar grupo</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+
+                                <form class="form">
+
+                                    <div class="control-group">
+                                        <label>Nome do grupo</label>
+                                        <input type="text" class="form-control" placeholder="Nome do grupo">
+                                    </div>      
+
+                                    <div class="control-group">
+                                        <label>Descrição</label>
+                                        <textarea class="form-control" placeholder="Detalhes do grupo"></textarea>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div class="control-group">
+                                            <label>Este grupo é ativo?</label>
+                                            <div class="input-group">
+                                                <div id="radioBtn" class="btn-group">
+                                                    <a class="btn btn-primary btn-sm active" data-toggle="happy" data-title="Y">
+                                                        <i class="fa fa-check" aria-hidden="true"></i> SIM
+                                                    </a>
+                                                    <a class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="N">
+                                                        <i class="fa fa-times" aria-hidden="true"></i> NÃO
+                                                    </a>
+                                                </div>
+                                                <input type="hidden" name="happy" id="happy">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="control-group">
+                                            <label>&nbsp;</label>
+                                            <button type="submit" class="btn btn-primary btn-block">
+                                                <strong><i class="fa fa-paper-plane"></i> Adicionar / Edit</strong>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="footer">

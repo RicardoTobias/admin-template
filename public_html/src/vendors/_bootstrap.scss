@@ -29,8 +29,8 @@
 @import "bootstrap/input-groups";
 @import "bootstrap/navs";
 @import "bootstrap/navbar";
-//@import "bootstrap/breadcrumbs";
-//@import "bootstrap/pagination";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/pagination";
 //@import "bootstrap/pager";
 @import "bootstrap/labels";
 //@import "bootstrap/badges";
@@ -40,17 +40,19 @@
 //@import "bootstrap/progress-bars";
 //@import "bootstrap/media";
 //@import "bootstrap/list-group";
-//@import "bootstrap/panels";
+@import "bootstrap/panels";
 //@import "bootstrap/responsive-embed";
 //@import "bootstrap/wells";
-//@import "bootstrap/close";
+@import "bootstrap/close";
 
 // Components w/ JavaScript
-//@import "bootstrap/modals";
-//@import "bootstrap/tooltip";
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
 //@import "bootstrap/popovers";
 //@import "bootstrap/carousel";
 
 // Utility classes
-//@import "bootstrap/utilities";
+@import "bootstrap/utilities";
 //@import "bootstrap/responsive-utilities";
+
+@import "bootstrap/bootstrap-select";
