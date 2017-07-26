@@ -25,13 +25,23 @@ $("#input-id").fileinput({
     browseOnZoneClick: true,
     elErrorContainer: '#kv-avatar-errors-2',
     msgErrorClass: 'alert alert-block alert-danger',
-    defaultPreviewContent: '<img src="http://localhost:8000/public_html/assets/img/upload/photo.png" alt="Seu avatar" style="width:100%">'+
-                            '<h6 class="text-muted" style="text-align: center;font-size: 14px;">Avatar</h6>',
+    defaultPreviewContent: '<img src="http://localhost:8000/public_html/assets/img/upload/photo.png" alt="Seu avatar" style="width:100%">' +
+            '<h6 class="text-muted" style="text-align: center;font-size: 14px;">Avatar</h6>',
     allowedFileExtensions: ["jpg", "png", "gif"]
 });
 
 $('.selectpicker').selectpicker({
     width: '100%'
+});
+
+$('#excluding').on('show.bs.modal', function (event) {
+
+    var button = $(event.relatedTarget);
+    var id = button.data('group');
+
+    var modal = $(this);
+    modal.find('.modal-title').text('Excluir Cliente #' + id);
+    modal.find('#confirm').attr('href', 'http://localhost:8080/SistemaCadastro/admin/groups/remove/' + id);
 });
 
 

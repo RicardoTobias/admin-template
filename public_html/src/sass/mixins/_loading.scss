@@ -1,0 +1,36 @@
+// variables
+
+$path-image: "../img" !default;
+$bg:         transparent url('#{$path-image}/loading.gif') top left no-repeat;
+
+$top:        0;
+$right:      0;
+$width:      25px;
+$height:     25px;
+$font-size:  999px;
+$text-align: right;
+$color:      #fff;
+$background: $bg;
+$border:     none;
+
+@mixin loading(
+    $top,
+    $right,
+    $width,
+    $height,
+    $font-size,
+    $text-align,
+    $color,
+    $background,
+    $border
+){
+    top:        $top;
+    right:      $right;
+    width:      $width;
+    height:     $height;
+    font-size:  $font-size;
+    text-align: $text-align;
+    color:      $color;
+    background: $background;
+    border:     $border;
+}

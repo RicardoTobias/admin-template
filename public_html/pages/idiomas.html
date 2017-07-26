@@ -5,16 +5,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Admin - Lista grupos</title>
+        <title>Admin - Lista idiomas</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/vendors/font-awesome/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/main.min.css">
+        <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/vendors/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/main.min.css">
 
-        <script src="assets/vendors/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="../assets/vendors/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     </head>
     <body>
@@ -34,7 +34,7 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a class="navbar-brand" href="index.html">Ricardo Tobias</a>
+                        <a class="navbar-brand" href="../index.html">Ricardo Tobias</a>
 
                     </div><!-- .navbar-header -->
                 </nav><!-- .navbar .navbar-default -->
@@ -54,7 +54,7 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                                <a href="index.html"><i class="fa fa-dashboard"></i> Painel</a>
+                                <a href="../index.html"><i class="fa fa-dashboard"></i> Painel</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" data-toggle="collapse" data-target="#cadastros">
@@ -154,10 +154,10 @@
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-6">
-                                            <h4><i class="fa fa-list" aria-hidden="true"></i> Lista grupos</h4>
+                                            <h4><i class="fa fa-list" aria-hidden="true"></i> Lista idiomas</h4>
                                         </div>
                                         <div class="col-xs-6 text-right">
-                                            <a href="g_editar.html" class="btn btn-primary">
+                                            <a href="i_editar.html" class="btn btn-primary">
                                                 <i class="fa fa-plus" aria-hidden="true"></i> Criar novo
                                             </a>
                                         </div>
@@ -167,16 +167,18 @@
                                     <table class="table table-striped table-bordered table-hover">
                                         <thead>
                                             <tr>
-                                                <th>Grupo</th>
-                                                <th>Descrição</th>
+                                                <th>Idioma</th>
+                                                <th>Código</th>
+                                                <th><center>Idioma padrão</center></th>
                                                 <th>Status</th>
                                                 <th><center><em class="fa fa-cog"></em></center></th>
                                         </tr> 
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Nome do grupo</td>
-                                                <td>Descrição do grupo</td>
+                                                <td>Português</td>
+                                                <td>pt-br</td>
+                                                <td><center><i class="fa fa-check"></i></center></td>
                                                 <td><i>Ativo</i></td>
                                                 <td align="center">
                                                     <a class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Editar"><em class="fa fa-pencil"></em></a>
@@ -184,36 +186,10 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Nome do grupo</td>
-                                                <td>Descrição do grupo</td>
+                                                <td>English</td>
+                                                <td>en</td>
+                                                <td><center><i class="fa fa-minus"></i></center></td>
                                                 <td><i>Ativo</i></td>
-                                                <td align="center">
-                                                    <a class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Editar"><em class="fa fa-pencil"></em></a>
-                                                    <a class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Excluir"><em class="fa fa-trash"></em></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nome do grupo</td>
-                                                <td>Descrição do grupo</td>
-                                                <td><i>Inativo</i></td>
-                                                <td align="center">
-                                                    <a class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Editar"><em class="fa fa-pencil"></em></a>
-                                                    <a class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Excluir"><em class="fa fa-trash"></em></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nome do grupo</td>
-                                                <td>Descrição do grupo</td>
-                                                <td><i>Ativo</i></td>
-                                                <td align="center">
-                                                    <a class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Editar"><em class="fa fa-pencil"></em></a>
-                                                    <a class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Excluir"><em class="fa fa-trash"></em></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nome do grupo</td>
-                                                <td>Descrição do grupo</td>
-                                                <td><i>Inativo</i></td>
                                                 <td align="center">
                                                     <a class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Editar"><em class="fa fa-pencil"></em></a>
                                                     <a class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Excluir"><em class="fa fa-trash"></em></a>
@@ -256,11 +232,11 @@
         </div><!-- .wrapper -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>');</script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>');</script>
 
-        <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 
-        <script src="assets/js/main.min.js"></script>
+        <script src="../assets/js/main.min.js"></script>
 
     </body>
 </html>

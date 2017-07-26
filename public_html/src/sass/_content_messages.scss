@@ -1,0 +1,277 @@
+body .wrapper .content .main{
+
+    .content-container {
+        background-color:#fff;
+        padding:35px 20px;
+        margin-bottom:20px;
+    }
+    h1.content-title{
+        font-size:32px;
+        font-weight:300;
+        text-align:center;
+        margin-top:0;
+        margin-bottom:20px;
+        font-family: 'Open Sans', sans-serif!important;
+    }
+    /*Compose*/
+    .btn-send{
+        text-align:center;
+        margin-top:20px;
+    }
+    /*mail list*/
+
+    ul.mail-list{
+        padding:0;
+        margin:0;
+        list-style:none;
+        margin-top:30px;
+    }
+    ul.mail-list li a{
+        display:block;
+        border-bottom:1px dotted #CFCFCF;
+        padding:20px;
+        text-decoration:none;
+    }
+    ul.mail-list li:last-child a{
+        border-bottom:none;
+    }
+    ul.mail-list li a:hover{
+        background-color:#DBF9FF;
+    }
+    ul.mail-list li span{
+        display:block;
+    }
+    ul.mail-list li span.mail-sender{
+        font-weight:600;
+        color:#8F8F8F;
+    }
+    ul.mail-list li span.mail-subject{
+        color:#8C8C8C;
+    }
+    ul.mail-list li span.mail-message-preview{
+        display:block;
+        color:#A8A8A8;
+    }
+    .mail-search{
+        border-bottom-color:#7FBCC9!important; 
+    }
+
+    /*-- Messages --*/
+
+
+    .emailBody {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .emailBody .topBar {
+        position: relative;
+        width: 100%;
+        background-color: #dedede;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .emailBody .topBar .macBtns {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .emailBody .topBar .macBtns .btn {
+        padding: 7px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    .emailBody .topBar .macBtns .btn.close {
+        background-color: red;
+    }
+    .emailBody .topBar .macBtns .btn.min {
+        background-color: orange;
+    }
+    .emailBody .topBar .macBtns .btn.full {
+        background-color: #5be85b;
+    }
+    .emailBody .topBar span {
+        color: #666;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .emailBody .emailInfo .infoLine {
+        width: 100%;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #e1e1e1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+    .emailBody .emailInfo .infoLine .infoInput {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+    .emailBody .emailInfo .infoLine .infoInput label {
+        text-align: right;
+        font-weight: normal;
+        display: block;
+        min-width: 65px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #666;
+    }
+    .emailBody .emailInfo .infoLine .infoInput input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        display: block;
+        margin-left: 10px;
+        webkit-apperance: none;
+        letter-spacing: 0.1px;
+        font-size: 12px;
+    }
+    .emailBody .emailInfo .infoLine .infoInput input.active {
+        width: 174px;
+        display: block;
+        color: white;
+        background-color: #0484FA;
+        padding: 0 10px;
+        border-radius: 10px;
+    }
+    .emailBody .emailInfo .infoLine input#send {
+        width: initial;
+        background-color: transparent;
+        border: 1px solid #0484FA;
+        color: #0484FA;
+        padding: 2px 20px;
+        margin: 0;
+        margin-right: 10px;
+        border-radius: 5px;
+        -webkit-transition: 0.15s ease;
+        transition: 0.15s ease;
+    }
+    .emailBody .emailInfo .infoLine input#send:hover {
+        background-color: #0484FA;
+        color: white;
+        cursor: pointer;
+    }
+    .emailBody #mainMessage {
+        width: 100%;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        resize: none;
+        margin: 0;
+        height: 300px;
+        border: 0;
+        padding: 20px;
+        font-size: 14px;
+        color: black;
+        outline: none;
+    }
+
+    @-webkit-keyframes shrinkEmail {
+        0% {
+            -webkit-transform: scale(1) translate(0, 0%);
+            transform: scale(1) translate(0, 0%);
+            z-index: 3;
+            min-width: 320px;
+        }
+        65% {
+            z-index: 3;
+        }
+        66% {
+            min-width: 900px;
+            -webkit-transform: scale(0.29) translate(0, -120%);
+            transform: scale(0.29) translate(0, -120%);
+            z-index: 1;
+        }
+        100% {
+            min-width: 900px;
+            -webkit-transform: scale(0.29) translate(0, 0%);
+            transform: scale(0.29) translate(0, 0%);
+            z-index: 1;
+        }
+    }
+
+    @keyframes shrinkEmail {
+        0% {
+            -webkit-transform: scale(1) translate(0, 0%);
+            transform: scale(1) translate(0, 0%);
+            z-index: 3;
+            min-width: 320px;
+        }
+        65% {
+            z-index: 3;
+        }
+        66% {
+            min-width: 900px;
+            -webkit-transform: scale(0.29) translate(0, -120%);
+            transform: scale(0.29) translate(0, -120%);
+            z-index: 1;
+        }
+        100% {
+            min-width: 900px;
+            -webkit-transform: scale(0.29) translate(0, 0%);
+            transform: scale(0.29) translate(0, 0%);
+            z-index: 1;
+        }
+    }
+    @-webkit-keyframes moveLid {
+        0% {
+            -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+        }
+        100% {
+            -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+        }
+    }
+    @keyframes moveLid {
+        0% {
+            -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+        }
+        100% {
+            -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+        }
+    }
+    @-webkit-keyframes sendEnvelope {
+        0% {
+            -webkit-transform: translate(0%, -50%) scale(0.3);
+            transform: translate(0%, -50%) scale(0.3);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translate(100%, -50%) scale(0.3);
+            transform: translate(100%, -50%) scale(0.3);
+            opacity: 0;
+        }
+    }
+    @keyframes sendEnvelope {
+        0% {
+            -webkit-transform: translate(0%, -50%) scale(0.3);
+            transform: translate(0%, -50%) scale(0.3);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translate(100%, -50%) scale(0.3);
+            transform: translate(100%, -50%) scale(0.3);
+            opacity: 0;
+        }
+    }
+}

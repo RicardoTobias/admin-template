@@ -1,0 +1,55 @@
+// variables
+
+$display:         flex;
+$flex-direction:  column;
+$flex-wrapper:    nowrap;
+$justify-content: flex-start;
+$flex-pack:       start;
+$align-content:   space-around;
+$flex-line-pack:  distribute;
+$align-items:     center;
+
+$order:           0;
+$flex:            0 1 auto;
+$align-self:      auto;
+
+@mixin flexbox-container( 
+$display, 
+$flex-direction,
+$flex-wrapper, 
+$justify-content, 
+$flex-pack, 
+$align-content,
+$flex-line-pack,
+$align-items
+){
+    display:                 $display;
+    flex-direction:          $flex-direction;
+    flex-wrap:               $flex-wrapper;
+    -webkit-justify-content: $justify-content;
+    -ms-flex-pack:           $flex-pack;
+    justify-content:         $justify-content;
+    -webkit-align-content:   $align-content;
+    -ms-flex-line-pack:      $flex-line-pack;
+    align-content:           $align-content;
+    -webkit-align-items:     $align-items;
+    -ms-flex-align:          $align-items;
+    align-items:             $align-items;
+}
+
+@mixin flexbox-child(
+$order,
+$flex,
+$align-self
+){
+    -webkit-order:       $order;
+    -ms-flex-order:      $order;
+    order:               $order;
+    -webkit-flex:        $flex;
+    -ms-flex:            $flex;
+    flex:                $flex;
+    -webkit-align-self:  $align-self;
+    -ms-flex-item-align: $align-self;
+    align-self:          $align-self;
+}
+

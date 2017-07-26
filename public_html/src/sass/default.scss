@@ -1,15 +1,17 @@
-html,
-body{
+html, body{
     height: 100%;
     overflow: auto;
+    
     .wrapper{
         min-height: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+    
     .no-padding{
         padding: 0;
     }
+    
 }
 
